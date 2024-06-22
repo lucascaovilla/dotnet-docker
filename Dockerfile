@@ -7,8 +7,9 @@ WORKDIR /app
 # Expose the port the app runs on
 EXPOSE 5000
 
+# Check if there's a .NET project in the current directory, if not, create one
 CMD if [ ! -f *.csproj ]; then \
-    dotnet new console -o . --force ; \
+    dotnet new web -o . ; \
     fi && \
     dotnet restore && \
     dotnet watch run

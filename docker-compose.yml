@@ -7,3 +7,5 @@ services:
       - "5000:5000"
     volumes:
       - .:/app
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
