@@ -1,7 +1,7 @@
 # dotnet-docker
 
 
-Dotnet 6.0 needs to remove https redirect between var builder and bar app in Program.cs:
+Dotnet 6.0/7.0 needs to remove https redirect between var builder and bar app in Program.cs:
 
 builder.WebHost.ConfigureKestrel(options =>
 {
